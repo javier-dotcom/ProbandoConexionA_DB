@@ -46,6 +46,11 @@ Partial Class Form2
         Me.Apellido_sis = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Edad_sis = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.sexo_sis = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -187,7 +192,7 @@ Partial Class Form2
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(148, 415)
+        Me.Button2.Location = New System.Drawing.Point(161, 534)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 14
@@ -198,8 +203,8 @@ Partial Class Form2
         '
         Me.DataGridView2.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombre_sis, Me.Apellido_sis, Me.Edad_sis, Me.sexo_sis})
-        Me.DataGridView2.Location = New System.Drawing.Point(393, 268)
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombre_sis, Me.Apellido_sis, Me.Edad_sis, Me.sexo_sis, Me.id})
+        Me.DataGridView2.Location = New System.Drawing.Point(339, 268)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.Size = New System.Drawing.Size(542, 150)
         Me.DataGridView2.TabIndex = 15
@@ -224,11 +229,52 @@ Partial Class Form2
         Me.sexo_sis.HeaderText = "Sexo"
         Me.sexo_sis.Name = "sexo_sis"
         '
+        'id
+        '
+        Me.id.HeaderText = "ID en la base"
+        Me.id.Name = "id"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(77, 461)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(44, 13)
+        Me.Label7.TabIndex = 19
+        Me.Label7.Text = "Numero"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(76, 428)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(30, 13)
+        Me.Label8.TabIndex = 18
+        Me.Label8.Text = "Calle"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(136, 458)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox6.TabIndex = 17
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(136, 421)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox7.TabIndex = 16
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(947, 490)
+        Me.ClientSize = New System.Drawing.Size(1232, 727)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label6)
@@ -277,4 +323,9 @@ Partial Class Form2
     Friend WithEvents Apellido_sis As DataGridViewTextBoxColumn
     Friend WithEvents Edad_sis As DataGridViewTextBoxColumn
     Friend WithEvents sexo_sis As DataGridViewTextBoxColumn
+    Friend WithEvents id As DataGridViewTextBoxColumn
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents TextBox7 As TextBox
 End Class
